@@ -1,16 +1,13 @@
 
-import express from "express"
+import express from "express";
+import userRoute from "./routes/user.routes.js";
+import tweetsRoute from "./routes/tweets.routes.js";
 
- const app = express();
- const port = 3000;
+const app = express();
 
+app.use("/tweets", tweetsRoute);
 
-app.get("/",(req,res) =>{
-    res.send("C'est n'est pas soricer le back-end")
-})
-
-app.listen(port, ()=>{
-    console.log(`le serveur est demarré sur le port ${port}`)
-})
+app.use("/", userRoute);
+app.listen(5000);
 
 
