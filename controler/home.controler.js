@@ -1,7 +1,5 @@
-import { Router } from "express"
-import { homeControler } from "../controler/home.controler";
-
-const homeRoute = Router();
-homeRoute.use("/",homeControler);
-
-export default homeRoute;
+import data from "./../data.js"
+export default function getHomeControler(req, res) {
+  res.send(data)
+  
+}

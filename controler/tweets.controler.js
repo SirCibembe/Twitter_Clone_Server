@@ -1,14 +1,6 @@
-import data from "../data.js";
-
-let tweetsTable = [...data.tweets.reverse()];
-
-export function tweetsControler(req, res) {
-  res.send(tweetsTable);
+import data from "./../data.js"
+export default function getTweetsControler(req, res) {
+  // console.log(data.currentUser)
+  res.send(data.tweets)
+  
 }
-
-export function postTweetsControler(req, res) {
-  let newTweet = [req.body, ...tweetsTable];
-  tweetsTable = newTweet;
-  res.send(req.body);
-}
-

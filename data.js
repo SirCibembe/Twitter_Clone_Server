@@ -1,4 +1,4 @@
-const data = [
+const data = 
     {
       currentUser: {
         name: "Bradley Ortiz",
@@ -49,7 +49,7 @@ const data = [
           }
         ]
       },
-      media: [
+      tweets: [
         {
           id: "01",
           avatar: "/assets/img/tweet-avatar1.svg",
@@ -156,7 +156,6 @@ const data = [
           }
         }
       ]
-    }
-  ];
+    };
   
 export default data;
