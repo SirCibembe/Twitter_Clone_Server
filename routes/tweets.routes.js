@@ -1,8 +1,8 @@
 import { Router } from "express";
-import getTweetsControler from "../controler/tweets.controler.js";
+import getTweetsController from "../controllers/tweets.controller.js";
 
  const tweetsRoute  = Router();
- tweetsRoute.get("/tweets", getTweetsControler);
+ tweetsRoute.get("/", getTweetsController);
  
 
  export default tweetsRoute;

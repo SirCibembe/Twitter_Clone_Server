@@ -7,6 +7,8 @@ const app = express();
 
 app.use("/tweets", tweetsRoute)
 app.use("/", userRoute);
-app.listen(5000);
+app.listen(5000, () => {
+    console.log("server running... http://localhost:" + 5000)
+});
 
 
